@@ -4,6 +4,7 @@ title = "can."
 theme = "black-and-light"
 author = "can."
 hasCJKLanguage = true
+publishDir = "/var/www/canxme"
 
 [[menu.main]]
     name = "GitHub"
