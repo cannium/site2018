@@ -3,7 +3,7 @@ title: Back Online
 date: 2018-09-02
 ---
 
-After a 4-year suspension, my personal website is back online again. To protect myself from being emotional, I'll keep this post as a note on how to setup the new website.
+After a 4-year suspension, my personal website is back online again. To protect myself from being sentimental, I'll keep this post as a note on how to setup the new website.
 
 To save budget, I bought a VPS instance from Vultr. And here is my referral code: https://www.vultr.com/?ref=7082522 
 If you use the code to register, both you and me would get some money back.
