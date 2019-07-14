@@ -3,9 +3,7 @@ title: About can.
 hidden: true
 ---
 
-Coder. Engineer. Programming language enthusiast.
-
-Currently digging IPFS and blockchain related projects.
+Coder. Engineer. Looking for a job outside mainland China.
 
 email: can@canx.me
 
