@@ -38,10 +38,12 @@ thread 9 read key A content 006-A1
 ```
 But stale reads happen. `read B 006-B2` happens after `write B 006-B2`, `write B 006-B2` happens after `write A 006-A2` since they are in the same thread, `write A 006-A2` happens after `read A 006-A1` otherwise `006-A2` would be read, so `read B 006-B2` should happen after `read A 006-A1`, boom!
 
+![detect-stale-read-graph](/detect-stale-read-model.jpg)
+
 This problem could be modeled as finding cycles in a directed graph, and there're [very](https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm) [quick](https://www.geeksforgeeks.org/detect-cycle-in-a-graph/) algorithms. Obviously, all those reads and writes are vertices. To build the graph, 3 kinds of edges need to be considered:
 
-- In the same thread, Event[n+1] happens after Event[n]
-- The read of X[n] happens after the write of X[n]
-- The read of X[n] happens before the write of X[n+1]
+- In the same thread, Event[n+1] happens after Event[n]. (The a, b, c, d, e edges in above picture)
+- The read of X[n] happens after the write of X[n]. (The f, g edges)
+- The read of X[n] happens before the write of X[n+1]. (The h edge)
 
 Where `Event[n]` denotes the n-th read or write in the thread, `X[n]` denotes the n-th value of a key.
