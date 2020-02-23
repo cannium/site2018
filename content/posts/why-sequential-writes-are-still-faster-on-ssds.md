@@ -21,3 +21,9 @@ With the knowledge above, we could finally answer the question in the title, why
 
 - The address map table is smaller since new data are consecutive in larger chunks.
 - GC operation is simpler, no "read, update, write-to-another-block" required, only metadata needs to be updated. Erase of the block is required anyway.
+
+References:
+
+[1] [Operating Systems: Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/)
+
+[2] [The NAND chip picture](www.tekspecz.com/new-blog-2/2015/5/10/explanation-needed-ssd-technology-better-known-as-solid-state-drive#yui_3_17_2_1_1582458919206_121)
