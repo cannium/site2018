@@ -5,9 +5,9 @@ date: 2019-07-14
 
 Golang is blamed for lacking of generics, and the solution for that is code generation. Surely reflection could also do the job, but code generation has 3 advantages:
 
-1. Generated code could be made type-safe, you don't want to see `interface{}` everywhere
-2. Generated code runs faster, no runtime overhead
-3. Generated code is easier to understand and less cryptic
+- Generated code could be made type-safe, you don't want to see `interface{}` everywhere
+- Generated code runs faster, no runtime overhead
+- Generated code is easier to understand and less cryptic
 
 Basically the only library needed is [`text/template`](https://golang.org/pkg/text/template/), and skeleton code looks like(error handling omitted):
 

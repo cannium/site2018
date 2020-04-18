@@ -21,6 +21,6 @@ Amazon chooses 7 for metadata replica number, to balance durability, latency, av
 
 More references:
 
-[1] [AWS re:Invent keynote speech, begins at 40:30](https://youtu.be/OdzaTbaQwTg?t=2431)
+[1] [AWS re:Invent keynote speech, begins at 40:30](https://youtu.be/OdzaTbaQwTg?t=2430)
 
-[2] [Paper author's blog](https://brooker.co.za/blog/2020/02/17/physalia.html)
+[2] [Paper author's blog post](https://brooker.co.za/blog/2020/02/17/physalia.html)
